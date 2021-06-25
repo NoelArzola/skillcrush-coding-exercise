@@ -6,48 +6,60 @@
     <title>Skillcrush Free Coding Camp</title>
     <meta name="description" content="Skillcrush Free Coding Camp" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="css/styles.css" />
     <script
       src="https://kit.fontawesome.com/f95b13903c.js"
       crossorigin="anonymous"
     ></script>
   </head>
   <body>
-    <header>
+    <header
+      class="bg-skillcrush-pink flex flex-col justify-center items-center"
+    >
+      <img
+        class="w-32"
+        src="img/coding-camp-illustration.svg"
+        alt="Red tent with a mountain behind it"
+      />
       <h1>Hi, Sadie!</h1>
       <p>Keep Skillcrushing it!</p>
     </header>
-    <aside>
-      <p>
+    <!-- Begin message alert-->
+    <aside class="bg-pale-yellow">
+      <p class="text-xs">
         <i class="fas fa-bell"></i>Yippee! You Have A New Message From Your
         Instructor.
       </p>
     </aside>
+    <!-- End message alert-->
     <div id="content">
       <!-- Begin student progress -->
-      <div>
+      <div class="border border-light-gray flex">
         <div>
-          <h4>Your progress</h4>
+          <h4 class="uppercase text-medium-gray">Your progress</h4>
           <h3><span>56</span>% Done</h3>
         </div>
         <div>
-          <h5><i class="fas fa-clock"></i> 3-5 days</h5>
+          <h5 class="uppercase"><i class="fas fa-clock"></i> 3-5 days</h5>
         </div>
         <div>
-          <span></span>
+          <div class="bg-base-gray h-3 w-full">
+            <span class="bg-green w-56 h-full block"></span>
+          </div>
+
           <!-- Progress bar fill will go in this span-->
         </div>
       </div>
       <!-- End student progress -->
       <!-- Begin lesson tab and expand/collapse-->
-      <nav>
+      <nav class="flex">
         <div>
-          <button>Lessons</button>
+          <button class="uppercase">Lessons</button>
         </div>
         <div>
-          <button>
+          <button class="border border-dark-gray">
             <span><i class="fas fa-angle-double-down"></i></span
-            ><span>Expand all</span>
+            ><span class="uppercase text-dark-gray">Expand all</span>
           </button>
         </div>
       </nav>
@@ -57,11 +69,11 @@
         <div>
           <!-- Begin lesson-->
           <div>
-            <div>
-              <div>1</div>
+            <div class="flex">
+              <div><span class="border-4 rounded-full">1</span></div>
               <!-- Begin lesson text-->
               <div>
-                <h2>Introduction</h2>
+                <h2 class="uppercase">Introduction</h2>
                 <p>
                   Everything you need to know to get started in Coding Camp, and
                   exactly what to expect.
@@ -71,8 +83,10 @@
               <div><i class="fas fa-chevron-down"></i></div>
             </div>
             <ul>
-              <li>
-                <div><i class="fas fa-play-circle"></i></div>
+              <li class="flex">
+                <div class="rounded-full bg-gray-300 text-white">
+                  <i class="fas fa-play"></i>
+                </div>
                 <div>
                   <h3><a href="">Welcome to Skillcrush Coding Camp!</a></h3>
                 </div>
@@ -82,11 +96,11 @@
           <!-- End lesson-->
           <!-- Begin lesson-->
           <div>
-            <div>
-              <div>2</div>
+            <div class="flex">
+              <div><span class="border-4 rounded-full">2</span></div>
               <!-- Begin lesson text-->
               <div>
-                <h2>Tech is for everyone</h2>
+                <h2 class="uppercase">Tech is for everyone</h2>
                 <p>
                   Why is a tech career the best choice if you're looking for a
                   job with freedom, flexibility, and a nice paycheck? And which
@@ -98,38 +112,50 @@
             </div>
             <ul>
               <!-- Begin lesson steps -->
-              <li>
-                <div><i class="fas fa-play-circle"></i></div>
+              <li class="flex">
+                <div class="rounded-full bg-gray-300 text-white">
+                  <i class="fas fa-play"></i>
+                </div>
                 <div>
                   <h3><a href="">Tech Is for Everyone</a></h3>
                 </div>
               </li>
-              <li>
-                <div><i class="fas fa-align-justify"></i></div>
+              <li class="flex">
+                <div class="rounded-full bg-gray-300 text-white">
+                  <i class="fas fa-align-justify"></i>
+                </div>
                 <div>
                   <h3><a href="">What Are Your Career Goals?</a></h3>
                 </div>
               </li>
-              <li>
-                <div><i class="fas fa-align-justify"></i></div>
+              <li class="flex">
+                <div class="rounded-full bg-gray-300 text-white">
+                  <i class="fas fa-align-justify"></i>
+                </div>
                 <div>
                   <h3><a href="">The Diverse and Creative World of Tech</a></h3>
                 </div>
               </li>
-              <li>
-                <div><i class="fas fa-play-circle"></i></div>
+              <li class="flex">
+                <div class="rounded-full bg-gray-300 text-white">
+                  <i class="fas fa-play"></i>
+                </div>
                 <div>
                   <h3><a href="">How Skillcrush Changed Their Lives</a></h3>
                 </div>
               </li>
-              <li>
-                <div><i class="fas fa-play-circle"></i></div>
+              <li class="flex">
+                <div class="rounded-full bg-gray-300 text-white">
+                  <i class="fas fa-play"></i>
+                </div>
                 <div>
                   <h3><a href="">How to Start Your NEW Career</a></h3>
                 </div>
               </li>
-              <li>
-                <div><i class="fas fa-play-circle"></i></div>
+              <li class="flex">
+                <div class="rounded-full bg-gray-300 text-white">
+                  <i class="fas fa-play"></i>
+                </div>
                 <div>
                   <h3>
                     <a href="">Your Career Change Questions: ANSWERED!</a>
@@ -141,7 +167,85 @@
           <!-- End lesson-->
         </div>
       </div>
+      <!-- End lessons section-->
     </div>
+    <!-- End content-->
+    <footer
+      class="bg-skillcrush-pink flex flex-col justify-center items-center"
+    >
+      <div class="-mt-16">
+        <img src="img/bottom-hero-lady.png" alt="Smiling woman" />
+      </div>
+      <div class="text-black">
+        <h2>Enjoying coding camp? Upgrade to Break Into Tech!</h2>
+        <h3 class="uppercase">Includes:</h3>
+        <!-- Begin Break Into Tech list -->
+        <ul>
+          <!-- Begin list items -->
+          <li>
+            <div class="flex">
+              <div><i class="fas fa-check"></i></div>
+              <div>
+                <p>14 tech skill training classes</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="flex">
+              <div><i class="fas fa-check"></i></div>
+              <div>
+                <p>Job focused career track</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="flex">
+              <div><i class="fas fa-check"></i></div>
+              <div>
+                <p>1-on-1 mentorship</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="flex">
+              <div><i class="fas fa-check"></i></div>
+              <div>
+                <p>90-day structured job search</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="flex">
+              <div><i class="fas fa-check"></i></div>
+              <div>
+                <p>Job guarantee</p>
+              </div>
+            </div>
+          </li>
+          <!-- End list items-->
+        </ul>
+        <!-- End Break Into Tech list -->
+        <!-- Begin CTA buttons -->
+        <div class="flex flex-col items-center">
+          <div>
+            <button class="uppercase bg-skillcrush-red text-white">
+              Upgrade now
+            </button>
+          </div>
+          <div>
+            <button
+              class="
+                uppercase
+                border-2 border-skillcrush-red
+                text-skillcrush-red
+              "
+            >
+              Learn more
+            </button>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script src="js/script.js" async defer></script>
   </body>
 </html>
