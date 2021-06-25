@@ -18,7 +18,7 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body>
+  <body class="font-sans">
     <header
       class="bg-skillcrush-pink flex flex-col justify-center items-center"
     >
@@ -27,12 +27,16 @@
         src="img/coding-camp-illustration.svg"
         alt="Red tent with a mountain behind it"
       />
-      <h1>Hi, Sadie!</h1>
-      <p>Keep Skillcrushing it!</p>
+      <h1 class="font-montserrat font-bold text-black-23 text-base text-3xl">
+        Hi, Sadie!
+      </h1>
+      <p class="font-open-sans font-normal text-black-23 text-lg">
+        Keep Skillcrushing it!
+      </p>
     </header>
     <!-- Begin message alert-->
     <aside class="bg-pale-yellow">
-      <p class="text-xs">
+      <p class="text-xs font-open-sans font-normal text-dark-gray">
         <i class="fas fa-bell"></i>Yippee! You Have A New Message From Your
         Instructor.
       </p>
@@ -40,17 +44,39 @@
     <!-- End message alert-->
     <div id="content">
       <!-- Begin student progress -->
-      <div class="border border-light-gray flex">
-        <div>
-          <h4 class="uppercase text-medium-gray">Your progress</h4>
-          <h3><span>56</span>% Done</h3>
-        </div>
-        <div>
-          <h5 class="uppercase"><i class="fas fa-clock"></i> 3-5 days</h5>
+      <div class="border border-light-gray">
+        <div class="flex">
+          <div>
+            <h4
+              class="
+                uppercase
+                text-medium-gray
+                font-montserrat font-bold
+                text-xs
+              "
+            >
+              Your progress
+            </h4>
+            <h3
+              class="
+                font-montserrat font-bold
+                text-base text-dark-gray text-base
+              "
+            >
+              <span>56</span>% Done
+            </h3>
+          </div>
+          <div>
+            <h5
+              class="uppercase font-montserrat font-bold text-xs text-dark-gray"
+            >
+              <i class="fas fa-clock"></i> 3-5 days
+            </h5>
+          </div>
         </div>
         <div>
           <div class="bg-base-gray h-3 w-full">
-            <span class="bg-green w-56 h-full block"></span>
+            <span class="bg-skillcrush-green w-56 h-full block"></span>
           </div>
 
           <!-- Progress bar fill will go in this span-->
@@ -60,12 +86,19 @@
       <!-- Begin lesson tab and expand/collapse-->
       <nav class="flex">
         <div>
-          <button class="uppercase">Lessons</button>
+          <button
+            class="uppercase font-open-sans font-bold text-sm text-dark-gray"
+          >
+            Lessons
+          </button>
         </div>
         <div>
           <button class="border border-dark-gray">
             <span><i class="fas fa-angle-double-down"></i></span
-            ><span class="uppercase text-dark-gray">Expand all</span>
+            ><span
+              class="uppercase text-dark-gray font-montserrat font-bold text-xs"
+              >Expand all</span
+            >
           </button>
         </div>
       </nav>
