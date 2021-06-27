@@ -34,18 +34,20 @@
         src="img/coding-camp-illustration.svg"
         alt="Red tent with a mountain behind it"
       />
-      <h1 class="font-montserrat font-bold text-black-23 text-base text-3xl">
-        Hi, Sadie!
-      </h1>
-      <p class="font-open-sans font-normal text-black-23 text-lg">
-        Keep Skillcrushing it!
-      </p>
+      <div class="flex flex-col justify-center items-center pt-6">
+        <h1 class="font-montserrat font-bold text-black-23 text-base text-3xl">
+          Hi, Sadie!
+        </h1>
+        <p class="font-open-sans font-normal text-black-23 text-lg">
+          Keep Skillcrushing it!
+        </p>
+      </div>
     </header>
     <!-- Begin message alert-->
-    <aside class="bg-pale-yellow pt-5 pb-5">
-      <p class="text-xs font-open-sans font-normal text-dark-gray text-center">
-        <i class="fas fa-bell"></i> Yippee! You Have A New Message From Your
-        Instructor.
+    <aside class="bg-pale-yellow pt-5 pb-5 px-3">
+      <p class="text-xs font-open-sans font-normal text-dark-gray text-left">
+        <i class="fas fa-bell pl-1.5 pr-1"></i> Yippee! You Have A New Message
+        From Your Instructor.
       </p>
     </aside>
     <!-- End message alert-->
@@ -93,27 +95,33 @@
       <!-- End student progress -->
       <!-- Begin lesson tab and expand/collapse-->
       <nav class="flex mt-12">
-        <div class="w-7/12 border-skillcrush-red border-b-4">
+        <div class="w-6/12 border-skillcrush-red border-b-4">
           <button
             class="uppercase font-open-sans font-bold text-sm text-dark-gray"
           >
             Lessons
           </button>
         </div>
-        <div class="w-5/12 ml-4">
+        <div class="w-6/12 ml-4">
           <button
+            id="expandAllController"
             class="
               border border-dark-gray
               w-full
               p-3
               text-xs text-dark-gray
               hover:bg-dark-gray hover:text-white
+              uppercase
+              font-montserrat font-bold
+              text-xs
             "
           >
-            <span><i class="fas fa-angle-double-down pr-2"></i></span
-            ><span class="uppercase font-montserrat font-bold text-xs"
-              >Expand all</span
-            >
+            <i
+              id="doubleDownChevron"
+              class="fas fa-angle-double-down transform"
+            ></i
+            ><span id="expandAllText" class="pl-2">Expand all</span
+            ><span id="collapseAllText" class="hidden pl-2">Collapse All</span>
           </button>
         </div>
       </nav>
@@ -143,7 +151,14 @@
               <div class="mr-8">
                 <h2>
                   <button
-                    class="uppercase text-base font-montserrat font-bold mb-1.5"
+                    class="
+                      toggleController
+                      Lessons
+                      uppercase
+                      text-base
+                      font-montserrat font-bold
+                      mb-1.5
+                    "
                   >
                     Introduction
                   </button>
@@ -158,6 +173,7 @@
                 <button>
                   <i
                     class="
+                      chevronButton
                       fas
                       fa-chevron-down
                       text-dark-gray
@@ -168,7 +184,7 @@
                 </button>
               </div>
             </div>
-            <ul class="mt-2">
+            <ul class="lessonToggle hidden mt-2">
               <li class="flex pb-9">
                 <div class="flex justify-center items-center mr-8 ml-2.5">
                   <span class="fa-stack">
@@ -211,6 +227,7 @@
               <div class="mr-8">
                 <h2>
                   <button
+                    id="toggleController"
                     class="uppercase text-base font-montserrat font-bold mb-1.5"
                   >
                     Tech is for everyone
@@ -237,7 +254,7 @@
                 </button>
               </div>
             </div>
-            <ul class="mt-2">
+            <ul class="lessonToggle hidden mt-2">
               <!-- Begin lesson steps -->
               <li class="flex pb-3.5">
                 <div class="flex justify-center items-center mr-8 ml-2.5">
@@ -379,7 +396,13 @@
               <div class="mr-8">
                 <h2>
                   <button
-                    class="uppercase text-base font-montserrat font-bold mb-1.5"
+                    class="
+                      toggleController
+                      uppercase
+                      text-base
+                      font-montserrat font-bold
+                      mb-1.5
+                    "
                   >
                     Merit Badge #1: HTML
                   </button>
@@ -404,7 +427,7 @@
                 </button>
               </div>
             </div>
-            <ul class="mt-2">
+            <ul class="lessonToggle hidden mt-2">
               <!-- Begin lesson steps -->
               <li class="flex pb-3.5">
                 <div class="flex justify-center items-center mr-8 ml-2.5">
@@ -633,63 +656,69 @@
         >
           Enjoying Coding Camp? Upgrade To Break Into Tech!
         </h2>
-        <h3
-          class="uppercase font-montserrat font-bold text-sm text-center mb-4"
-        >
-          Includes:
-        </h3>
-        <!-- Begin Break Into Tech list -->
-        <div class="flex justify-center mb-5">
-          <ul>
-            <!-- Begin list items -->
-            <li>
-              <div class="flex pb-4">
-                <div class="mr-2"><i class="fas fa-check"></i></div>
-                <div>
-                  <p class="text-sm font-normal font-open-sans">
-                    14 tech skill training classes
-                  </p>
+        <!-- Begin Break Into Tech Info-->
+        <div>
+          <h3
+            class="uppercase font-montserrat font-bold text-sm text-center mb-4"
+          >
+            Includes:
+          </h3>
+          <!-- Begin Break Into Tech list -->
+          <div class="flex justify-center mb-5">
+            <ul>
+              <!-- Begin list items -->
+              <li>
+                <div class="flex pb-4">
+                  <div class="mr-2"><i class="fas fa-check"></i></div>
+                  <div>
+                    <p class="text-sm font-normal font-open-sans">
+                      14 tech skill training classes
+                    </p>
+                  </div>
                 </div>
-              </div>
-            </li>
-            <li>
-              <div class="flex pb-4">
-                <div class="mr-2"><i class="fas fa-check"></i></div>
-                <div>
-                  <p class="font-open-sans text-sm">Job focused career track</p>
+              </li>
+              <li>
+                <div class="flex pb-4">
+                  <div class="mr-2"><i class="fas fa-check"></i></div>
+                  <div>
+                    <p class="font-open-sans text-sm">
+                      Job focused career track
+                    </p>
+                  </div>
                 </div>
-              </div>
-            </li>
-            <li>
-              <div class="flex pb-4">
-                <div class="mr-2"><i class="fas fa-check"></i></div>
-                <div>
-                  <p class="font-open-sans text-sm">1-on-1 mentorship</p>
+              </li>
+              <li>
+                <div class="flex pb-4">
+                  <div class="mr-2"><i class="fas fa-check"></i></div>
+                  <div>
+                    <p class="font-open-sans text-sm">1-on-1 mentorship</p>
+                  </div>
                 </div>
-              </div>
-            </li>
-            <li>
-              <div class="flex pb-4">
-                <div class="mr-2"><i class="fas fa-check"></i></div>
-                <div>
-                  <p class="font-open-sans text-sm">
-                    90-day structured job search
-                  </p>
+              </li>
+              <li>
+                <div class="flex pb-4">
+                  <div class="mr-2"><i class="fas fa-check"></i></div>
+                  <div>
+                    <p class="font-open-sans text-sm">
+                      90-day structured job search
+                    </p>
+                  </div>
                 </div>
-              </div>
-            </li>
-            <li>
-              <div class="flex pb-4">
-                <div class="mr-2"><i class="fas fa-check"></i></div>
-                <div>
-                  <p class="font-open-sans text-sm">Job guarantee</p>
+              </li>
+              <li>
+                <div class="flex pb-4">
+                  <div class="mr-2"><i class="fas fa-check"></i></div>
+                  <div>
+                    <p class="font-open-sans text-sm">Job guarantee</p>
+                  </div>
                 </div>
-              </div>
-            </li>
-            <!-- End list items-->
-          </ul>
+              </li>
+              <!-- End list items-->
+            </ul>
+          </div>
+          <!-- End Break Into Tech list -->
+          <!-- End Break Into Tech Info-->
         </div>
-        <!-- End Break Into Tech list -->
         <!-- Begin CTA buttons -->
         <div class="flex flex-col items-center">
           <div class="mb-4">
