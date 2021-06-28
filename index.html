@@ -73,7 +73,7 @@
     </aside>
     <!-- End Message Alert-->
     <!-- Begin Main Content Area -->
-    <div id="content" class="mt-9 mx-4 md:mx-10 xl:max-w-screen-lg xl:mx-auto">
+    <div class="mt-9 mx-4 md:mx-10 xl:max-w-screen-lg xl:mx-auto">
       <!-- Begin Student Progress Block -->
       <div class="border border-light-gray p-5">
         <!-- Begin Student Progress Text Wrapper -->
@@ -151,7 +151,6 @@
         <!-- Begin Expand/Collapse All Button -->
         <div class="w-6/12 md:w-1/4 ml-4 lg:w-1/6">
           <button
-            id="expandAllController"
             class="
               border border-dark-gray
               w-full
@@ -164,12 +163,9 @@
               md:text-sm
             "
           >
-            <i
-              id="doubleDownChevron"
-              class="fas fa-angle-double-down transform"
-            ></i
-            ><span id="expandAllText" class="pl-2">Expand all</span
-            ><span id="collapseAllText" class="hidden pl-2">Collapse All</span>
+            <i class="fas fa-angle-double-down transform"></i
+            ><span class="pl-2">Expand all</span
+            ><span class="hidden pl-2">Collapse All</span>
           </button>
         </div>
         <!-- Begin Expand/Collapse All -->
@@ -204,7 +200,6 @@
               <h2>
                 <button
                   class="
-                    toggleController
                     Lessons
                     uppercase
                     text-base
@@ -250,7 +245,7 @@
           </div>
           <!-- End Lesson Detail Block -->
           <!-- Begin Lesson Step List -->
-          <ul class="lessonToggle mt-2">
+          <ul class="hidden mt-2">
             <!-- Begin Lesson Step -->
             <li class="flex pb-9">
               <div class="flex justify-center items-center mr-8 ml-2.5">
@@ -306,7 +301,6 @@
             <div class="mr-8">
               <h2>
                 <button
-                  id="toggleController"
                   class="
                     uppercase
                     text-base
@@ -352,7 +346,7 @@
           </div>
           <!-- End  Lesson Detail Block -->
           <!-- Begin Lesson Step List -->
-          <ul class="lessonToggle hidden mt-2">
+          <ul class="hidden mt-2">
             <!-- Begin Lesson Step -->
             <li class="flex pb-3.5">
               <div class="flex justify-center items-center mr-8 ml-2.5">
@@ -539,7 +533,6 @@
               <h2>
                 <button
                   class="
-                    toggleController
                     uppercase
                     text-base
                     md:text-xl
@@ -583,7 +576,7 @@
           </div>
           <!-- End Lesson Detail Block -->
           <!-- Begin Lesson Step List -->
-          <ul class="lessonToggle hidden mt-2">
+          <ul class="hidden mt-2">
             <!-- Begin Lesson Step -->
             <li class="flex pb-3.5">
               <div class="flex justify-center items-center mr-8 ml-2.5">
