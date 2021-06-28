@@ -19,6 +19,7 @@
     ></script>
   </head>
   <body>
+    <!-- Begin Header -->
     <header
       class="
         bg-skillcrush-pink
@@ -30,11 +31,14 @@
         pb-14
       "
     >
+      <!-- Begin Header Graphic -->
       <img
         class="w-32"
         src="img/coding-camp-illustration.svg"
         alt="Red tent with a mountain behind it"
       />
+      <!-- End Header Graphic -->
+      <!-- Begin Header Text -->
       <div class="flex flex-col justify-center items-center pt-6 md:pl-5">
         <h1
           class="
@@ -49,8 +53,10 @@
           Keep Skillcrushing it!
         </p>
       </div>
+      <!-- End Header Text-->
     </header>
-    <!-- Begin message alert-->
+    <!-- End Header -->
+    <!-- Begin Message Alert-->
     <aside class="bg-pale-yellow pt-5 pb-5 px-3">
       <p
         class="
@@ -65,14 +71,17 @@
         Message From Your Instructor.
       </p>
     </aside>
-    <!-- End message alert-->
+    <!-- End Message Alert-->
+    <!-- Begin Main Content Area -->
     <div
       id="content"
       class="mt-9 ml-4 mr-4 md:mx-10 xl:max-w-screen-lg xl:mx-auto"
     >
-      <!-- Begin student progress -->
+      <!-- Begin Student Progress Block -->
       <div class="border border-light-gray p-5">
+        <!-- Begin Student Progress Text Wrapper -->
         <div class="flex justify-between">
+          <!-- Begin Student Progress Text -->
           <div>
             <h4
               class="
@@ -96,6 +105,8 @@
               56% Done
             </h3>
           </div>
+          <!-- End Student Progress Text -->
+          <!-- Begin Duration Text -->
           <div>
             <h5
               class="
@@ -109,18 +120,21 @@
               <i class="fas fa-clock"></i> 3-5 days
             </h5>
           </div>
+          <!-- End Duration Text-->
         </div>
+        <!-- End Student Progress Text Wrapper -->
+        <!-- Begin Progress Bar -->
         <div>
           <div class="bg-base-gray h-3 w-full mt-2.5">
             <span class="bg-skillcrush-green w-14/25 h-full block"></span>
           </div>
-
-          <!-- Progress bar fill will go in this span-->
         </div>
+        <!-- End Progress Bar -->
       </div>
-      <!-- End student progress -->
-      <!-- Begin lesson tab and expand/collapse-->
+      <!-- End Student Progress Block-->
+      <!-- Begin Lesson Tab and Expand/Collapse -->
       <nav class="flex mt-12">
+        <!-- Begin Lesson Tabs -->
         <div class="w-3/4 md:flex lg:w-5/6">
           <div class="border-skillcrush-red border-b-4 md:w-6/12">
             <button
@@ -136,6 +150,8 @@
           </div>
           <div class="hidden md:block border-base-gray border-b-2 w-6/12"></div>
         </div>
+        <!-- End Lesson Tabs-->
+        <!-- Begin Expand/Collapse All Button -->
         <div class="w-6/12 md:w-1/4 ml-4 lg:w-1/6">
           <button
             id="expandAllController"
@@ -159,13 +175,15 @@
             ><span id="collapseAllText" class="hidden pl-2">Collapse All</span>
           </button>
         </div>
+        <!-- Begin Expand/Collapse All -->
       </nav>
-      <!-- End lesson tab and expand/collapse-->
-      <!-- Begin lessons section-->
+      <!-- End Lesson Tab and Expand/Collapse -->
+      <!-- Begin Lessons Section -->
       <div class="mt-8 mb-24 md:mb-36">
         <div>
-          <!-- Begin lesson-->
+          <!-- Begin Lesson Block -->
           <div>
+            <!-- Begin Lesson Detail Block -->
             <div class="flex hover:bg-gray-100 py-6">
               <div class="mr-8 md:mr-12">
                 <span
@@ -185,7 +203,7 @@
                   >1</span
                 >
               </div>
-              <!-- Begin lesson text-->
+              <!-- Begin Lesson Detail Text -->
               <div class="mr-8">
                 <h2>
                   <button
@@ -215,7 +233,8 @@
                   exactly what to expect.
                 </p>
               </div>
-              <!-- End lesson text-->
+              <!-- End Lesson Detail Text -->
+              <!-- Begin Single Lesson Collapse/Expand -->
               <div class="flex items-center justify-end flex-grow">
                 <button>
                   <i
@@ -230,8 +249,12 @@
                   ></i>
                 </button>
               </div>
+              <!-- End Single Lesson Collapse/Expand -->
             </div>
+            <!-- End Lesson Detail Block -->
+            <!-- Begin Lesson Step List -->
             <ul class="lessonToggle mt-2">
+              <!-- Begin Lesson Step -->
               <li class="flex pb-9">
                 <div class="flex justify-center items-center mr-8 ml-2.5">
                   <span class="fa-stack">
@@ -255,11 +278,14 @@
                   </h3>
                 </div>
               </li>
+              <!-- End Lesson Step -->
             </ul>
+            <!-- End Lesson Step List -->
           </div>
-          <!-- End lesson-->
-          <!-- Begin lesson-->
+          <!-- End Lesson Block -->
+          <!-- Begin Lesson Block -->
           <div class="border-t border-gray-200">
+            <!-- Begin Lesson Detail Block -->
             <div class="flex hover:bg-gray-100 py-6">
               <div class="mr-8 md:mr-12">
                 <span
@@ -279,7 +305,7 @@
                   >2</span
                 >
               </div>
-              <!-- Begin lesson text-->
+              <!-- Begin Lesson Detail Text -->
               <div class="mr-8">
                 <h2>
                   <button
@@ -309,7 +335,8 @@
                   type of tech career is the right fit for you?
                 </p>
               </div>
-              <!-- End lesson text-->
+              <!-- End Lesson Detail Text -->
+              <!-- Begin Single Lesson Collapse/Expand -->
               <div class="flex items-center justify-end flex-grow">
                 <button>
                   <i
@@ -323,9 +350,12 @@
                   ></i>
                 </button>
               </div>
+              <!-- End Single Lesson Collapse/Expand -->
             </div>
+            <!-- End  Lesson Detail Block -->
+            <!-- Begin Lesson Step List -->
             <ul class="lessonToggle hidden mt-2">
-              <!-- Begin lesson steps -->
+              <!-- Begin Lesson Step -->
               <li class="flex pb-3.5">
                 <div class="flex justify-center items-center mr-8 ml-2.5">
                   <span class="fa-stack">
@@ -349,6 +379,8 @@
                   </h3>
                 </div>
               </li>
+              <!-- End Lesson Step -->
+              <!-- Begin Lesson Step -->
               <li class="flex pb-3.5">
                 <div class="flex justify-center items-center mr-8 ml-2.5">
                   <span class="fa-stack">
@@ -378,6 +410,8 @@
                   </h3>
                 </div>
               </li>
+              <!-- End Lesson Step -->
+              <!-- Begin Lesson Step -->
               <li class="flex pb-3.5">
                 <div class="flex justify-center items-center mr-8 ml-2.5">
                   <span class="fa-stack">
@@ -407,6 +441,8 @@
                   </h3>
                 </div>
               </li>
+              <!-- End Lesson Step -->
+              <!-- Begin Lesson Step -->
               <li class="flex pb-3.5">
                 <div class="flex justify-center items-center mr-8 ml-2.5">
                   <span class="fa-stack">
@@ -430,6 +466,8 @@
                   </h3>
                 </div>
               </li>
+              <!-- End Lesson Step -->
+              <!-- Begin Lesson Step -->
               <li class="flex pb-3.5">
                 <div class="flex justify-center items-center mr-8 ml-2.5">
                   <span class="fa-stack">
@@ -453,6 +491,8 @@
                   </h3>
                 </div>
               </li>
+              <!-- End Lesson Step -->
+              <!-- Begin Lesson Step -->
               <li class="flex pb-9">
                 <div class="flex justify-center items-center mr-8 ml-2.5">
                   <span class="fa-stack">
@@ -476,11 +516,14 @@
                   </h3>
                 </div>
               </li>
+              <!-- End Lesson Step -->
             </ul>
+            <!-- End Lesson Step List-->
           </div>
-          <!-- End lesson-->
-          <!-- Begin lesson-->
+          <!-- End Lesson Block -->
+          <!-- Begin Lesson Block -->
           <div class="border-t border-gray-200">
+            <!-- Begin Lesson Detail Block -->
             <div class="flex hover:bg-gray-100 py-6">
               <div class="mr-8 md:mr-12">
                 <span
@@ -501,7 +544,7 @@
                   >3</span
                 >
               </div>
-              <!-- Begin lesson text-->
+              <!-- Begin Lesson Detail Text -->
               <div class="mr-8">
                 <h2>
                   <button
@@ -530,7 +573,8 @@
                   the building block of the web. Bonus: it's also really fun.
                 </p>
               </div>
-              <!-- End lesson text-->
+              <!-- End Lesson Detail Text -->
+              <!-- Begin Single Lesson Collapse/Expand -->
               <div class="flex items-center justify-end flex-grow">
                 <button>
                   <i
@@ -544,9 +588,12 @@
                   ></i>
                 </button>
               </div>
+              <!-- End Single Lesson Collapse/Expand -->
             </div>
+            <!-- End Lesson Detail Block -->
+            <!-- Begin Lesson Step List -->
             <ul class="lessonToggle hidden mt-2">
-              <!-- Begin lesson steps -->
+              <!-- Begin Lesson Step -->
               <li class="flex pb-3.5">
                 <div class="flex justify-center items-center mr-8 ml-2.5">
                   <span class="fa-stack">
@@ -570,6 +617,8 @@
                   </h3>
                 </div>
               </li>
+              <!-- End Lesson Step -->
+              <!-- Begin Lesson Step -->
               <li class="flex pb-3.5">
                 <div class="flex justify-center items-center mr-8 ml-2.5">
                   <span class="fa-stack">
@@ -593,6 +642,8 @@
                   </h3>
                 </div>
               </li>
+              <!-- End Lesson Step -->
+              <!-- Begin Lesson Step -->
               <li class="flex pb-3.5">
                 <div class="flex justify-center items-center mr-8 ml-2.5">
                   <span class="fa-stack">
@@ -622,6 +673,8 @@
                   </h3>
                 </div>
               </li>
+              <!-- End Lesson Step -->
+              <!-- Begin Lesson Step -->
               <li class="flex pb-3.5">
                 <div class="flex justify-center items-center mr-8 ml-2.5">
                   <span class="fa-stack">
@@ -645,6 +698,8 @@
                   </h3>
                 </div>
               </li>
+              <!-- End Lesson Step -->
+              <!-- Begin Lesson Step -->
               <li class="flex pb-3.5">
                 <div class="flex justify-center items-center mr-8 ml-2.5">
                   <span class="fa-stack">
@@ -669,6 +724,8 @@
                   </h3>
                 </div>
               </li>
+              <!-- End Lesson Step -->
+              <!-- Begin Lesson Step -->
               <li class="flex pb-3.5">
                 <div class="flex justify-center items-center mr-8 ml-2.5">
                   <span class="fa-stack">
@@ -698,6 +755,8 @@
                   </h3>
                 </div>
               </li>
+              <!-- End Lesson Step -->
+              <!-- Begin Lesson Step -->
               <li class="flex pb-3.5">
                 <div class="flex justify-center items-center mr-8 ml-2.5">
                   <span class="fa-stack">
@@ -723,6 +782,8 @@
                   </h3>
                 </div>
               </li>
+              <!-- End Lesson Step -->
+              <!-- Begin Lesson Step -->
               <li class="flex pb-3.5">
                 <div class="flex justify-center items-center mr-8 ml-2.5">
                   <span class="fa-stack">
@@ -746,6 +807,8 @@
                   </h3>
                 </div>
               </li>
+              <!-- End Lesson Step -->
+              <!-- Begin Lesson Step -->
               <li class="flex pb-3.5">
                 <div class="flex justify-center items-center mr-8 ml-2.5">
                   <span class="fa-stack">
@@ -769,6 +832,8 @@
                   </h3>
                 </div>
               </li>
+              <!-- End Lesson Step -->
+              <!-- Begin Lesson Step -->
               <li class="flex pb-3.5">
                 <div class="flex justify-center items-center mr-8 ml-2.5">
                   <span class="fa-stack">
@@ -798,14 +863,17 @@
                   </h3>
                 </div>
               </li>
+              <!-- End Lesson Step -->
             </ul>
+            <!-- End Lesson Step List -->
           </div>
           <!-- End lesson-->
         </div>
       </div>
       <!-- End lessons section-->
     </div>
-    <!-- End content-->
+    <!-- End  Main Content Area -->
+    <!-- Begin Footer -->
     <footer
       class="
         bg-skillcrush-pink
@@ -818,9 +886,12 @@
         md:pb-16
       "
     >
+      <!-- Begin Break Into Tech Callout Section -->
       <div class="-mt-16">
         <img src="img/bottom-hero-lady.png" alt="A smiling woman" />
       </div>
+
+      <!-- Begin Break Into Tech Callout Content -->
       <div class="text-black lg:mx-0 lg:max-w-screen-lg">
         <h2
           class="
@@ -838,7 +909,7 @@
         >
           Enjoying Coding Camp? Upgrade To Break Into Tech!
         </h2>
-        <!-- Begin Break Into Tech Callout-->
+        <!-- Begin Break Into Tech Features -->
         <div class="md:flex md:flex-col md:items-center lg:flex-row lg:mx-auto">
           <h3
             class="
@@ -852,10 +923,10 @@
           >
             Includes:
           </h3>
-          <!-- Begin Break Into Tech list -->
+          <!-- Begin Break Into Tech Features List -->
           <div class="flex justify-center mb-5 md:ml-7 lg:ml-4">
             <ul class="md:flex md:flex-row md:flex-wrap">
-              <!-- Begin list items -->
+              <!-- Begin Feature -->
               <li class="px-4">
                 <div class="flex pb-4">
                   <div class="mr-2"><i class="fas fa-check"></i></div>
@@ -866,6 +937,8 @@
                   </div>
                 </div>
               </li>
+              <!-- End Feature -->
+              <!-- Begin Feature -->
               <li class="px-4">
                 <div class="flex pb-4 md:pl-2">
                   <div class="mr-2"><i class="fas fa-check"></i></div>
@@ -876,6 +949,8 @@
                   </div>
                 </div>
               </li>
+              <!-- End Feature -->
+              <!-- Begin Feature -->
               <li class="px-4">
                 <div class="flex pb-4">
                   <div class="mr-2"><i class="fas fa-check"></i></div>
@@ -884,6 +959,8 @@
                   </div>
                 </div>
               </li>
+              <!-- End Feature -->
+              <!-- Begin Feature -->
               <li class="px-4">
                 <div class="flex pb-4">
                   <div class="mr-2"><i class="fas fa-check"></i></div>
@@ -894,6 +971,8 @@
                   </div>
                 </div>
               </li>
+              <!-- End Feature -->
+              <!-- Begin Feature -->
               <li class="px-4">
                 <div class="flex pb-4">
                   <div class="mr-2"><i class="fas fa-check"></i></div>
@@ -902,14 +981,15 @@
                   </div>
                 </div>
               </li>
+              <!-- End Feature -->
               <!-- End list items-->
             </ul>
           </div>
-          <!-- End Break Into Tech list -->
-          <!-- End Break Into Tech Info-->
+          <!-- End Break Into Tech Features List -->
         </div>
-        <!-- Begin CTA buttons -->
+        <!-- Begin Call To Action Buttons -->
         <div class="flex flex-col md:flex-row md: justify-center items-center">
+          <!-- Begin Upgrade Button -->
           <div class="mb-4 md:mb-0 md:pr-2">
             <a
               href="https://skillcrush.com/blueprint/break-into-tech-blueprint-2/"
@@ -928,6 +1008,8 @@
               </button>
             </a>
           </div>
+          <!-- End Upgrade Button -->
+          <!-- Begin Learn More Button -->
           <div class="md:pl-2">
             <a href="https://skillcrush.com/break-into-tech-blueprint">
               <button
@@ -944,10 +1026,12 @@
               </button>
             </a>
           </div>
+          <!-- End Learn More Button -->
         </div>
       </div>
+      <!-- End Break Into Tech Callout Content -->
+      <!-- End Break Into Tech Callout Section -->
     </footer>
-
     <script src="js/script.js" async defer></script>
   </body>
 </html>
