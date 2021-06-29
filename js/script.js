@@ -39,7 +39,7 @@ const collapse = (selector, cmd) => {
 };
 
 /* Code block for the Expand/Collapse All button */
-const renameMe = function () {
+const toggleAll = function () {
   const carets = Array.from(document.querySelectorAll("[data-lesson-caret"));
 
   const activateMainToggle = () => {
@@ -80,7 +80,7 @@ const renameMe = function () {
 };
 
 /* Runs the function for the expand/collapse all button */
-toggleAllController.addEventListener("click", renameMe);
+toggleAllController.addEventListener("click", toggleAll);
 
 /* onClick handler */
 controllers.forEach((trigger) => {
