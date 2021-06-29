@@ -168,9 +168,14 @@
               md:text-sm
             "
           >
-            <i class="fas fa-angle-double-down transform"></i
-            ><span class="pl-2">Expand all</span
-            ><span class="hidden pl-2">Collapse All</span>
+            <i
+              data-button-text="icon"
+              class="fas fa-angle-double-down transform"
+            ></i
+            ><span data-button-text="expand" class="pl-2">Expand all</span
+            ><span data-button-text="collapse" class="hidden pl-2"
+              >Collapse All</span
+            >
           </button>
         </div>
         <!-- Begin Expand/Collapse All -->
@@ -207,7 +212,8 @@
               <h2>
                 <button
                   data-toggle-role="controller"
-                  data-lesson-target="1"
+                  data-lesson-target=".lesson-1"
+                  data-lesson-caret="#lessonOneCaret"
                   class="
                     Lessons
                     uppercase
@@ -239,10 +245,11 @@
             <div class="flex items-center justify-end flex-grow">
               <button>
                 <i
+                  id="lessonOneCaret"
                   data-toggle-role="controller"
+                  data-lesson-caret="#lessonOneCaret"
+                  data-lesson-target=".lesson-1"
                   data-is-active="false"
-                  data-lesson-caret="1"
-                  data-lesson-target="1"
                   class="
                     chevronButton
                     fas
@@ -260,9 +267,8 @@
           <!-- Begin Lesson Step List -->
           <ul
             data-toggle-role="collapsible"
-            data-lesson-number="1"
-            data-expanded-state="false"
-            class="hidden mt-2"
+            data-is-open="false"
+            class="lesson-1 hidden mt-2"
           >
             <!-- Begin Lesson Step -->
             <li class="flex pb-9">
@@ -322,7 +328,8 @@
               <h2>
                 <button
                   data-toggle-role="controller"
-                  data-lesson-target="2"
+                  data-lesson-target=".lesson-2"
+                  data-lesson-caret="#lessonTwoCaret"
                   class="
                     uppercase
                     text-base
@@ -354,10 +361,11 @@
             <div class="flex items-center justify-end flex-grow">
               <button>
                 <i
+                  id="lessonTwoCaret"
+                  data-lesson-caret="#lessonTwoCaret"
                   data-toggle-role="controller"
+                  data-lesson-target=".lesson-2"
                   data-is-active="false"
-                  data-lesson-caret="2"
-                  data-lesson-target="2"
                   class="
                     fas
                     fa-chevron-down
@@ -374,9 +382,8 @@
           <!-- Begin Lesson Step List -->
           <ul
             data-toggle-role="collapsible"
-            data-lesson-number="2"
-            data-expanded-state="false"
-            class="hidden mt-2"
+            data-is-open="false"
+            class="lesson-2 hidden mt-2"
           >
             <!-- Begin Lesson Step -->
             <li class="flex pb-3.5">
@@ -566,8 +573,8 @@
               <h2>
                 <button
                   data-toggle-role="controller"
-                  data-is-active="false"
-                  data-lesson-target="3"
+                  data-lesson-target=".lesson-3"
+                  data-lesson-caret="#lessonThreeCaret"
                   class="
                     uppercase
                     text-base
@@ -598,10 +605,11 @@
             <div class="flex items-center justify-end flex-grow">
               <button>
                 <i
+                  id="lessonThreeCaret"
                   data-toggle-role="controller"
-                  data-lesson-target="3"
-                  data-is-active="true"
-                  data-lesson-caret="3"
+                  data-lesson-caret="#lessonThreeCaret"
+                  data-lesson-target=".lesson-3"
+                  data-is-active="false"
                   class="
                     fas
                     fa-chevron-down
@@ -618,9 +626,8 @@
           <!-- Begin Lesson Step List -->
           <ul
             data-toggle-role="collapsible"
-            data-lesson-number="3"
-            data-expanded-state="false"
-            class="hidden mt-2"
+            data-is-open="false"
+            class="lesson-3 hidden mt-2"
           >
             <!-- Begin Lesson Step -->
             <li class="flex pb-3.5">
