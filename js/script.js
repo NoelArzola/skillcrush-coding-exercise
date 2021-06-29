@@ -40,8 +40,6 @@ const collapse = (selector, cmd) => {
 
 /* Code block for the Expand/Collapse All button */
 const toggleAll = function () {
-  const carets = Array.from(document.querySelectorAll("[data-lesson-caret"));
-
   const activateMainToggle = () => {
     if (toggleAllState === "true") {
       collapsibles.forEach((e) => {
