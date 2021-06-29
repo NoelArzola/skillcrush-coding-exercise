@@ -153,6 +153,8 @@
         <!-- Begin Expand/Collapse All Button -->
         <div class="w-6/12 md:w-1/4 ml-4 lg:w-1/6">
           <button
+            data-toggle-role="control-all"
+            data-main-toggle-active="false"
             class="
               border border-dark-gray
               w-full
@@ -203,6 +205,8 @@
             <div class="mr-8">
               <h2>
                 <button
+                  data-toggle-role="controller"
+                  data-lesson-target="1"
                   class="
                     Lessons
                     uppercase
@@ -234,6 +238,10 @@
             <div class="flex items-center justify-end flex-grow">
               <button>
                 <i
+                  data-toggle-role="controller"
+                  data-is-active="false"
+                  data-lesson-caret="1"
+                  data-lesson-target="1"
                   class="
                     chevronButton
                     fas
@@ -249,7 +257,12 @@
           </div>
           <!-- End Lesson Detail Block -->
           <!-- Begin Lesson Step List -->
-          <ul class="hidden mt-2">
+          <ul
+            data-toggle-role="collapsible"
+            data-lesson-number="1"
+            data-expanded-state="false"
+            class="hidden mt-2"
+          >
             <!-- Begin Lesson Step -->
             <li class="flex pb-9">
               <div class="flex justify-center items-center mr-8 ml-2.5">
@@ -307,6 +320,8 @@
             <div class="mr-8">
               <h2>
                 <button
+                  data-toggle-role="controller"
+                  data-lesson-target="2"
                   class="
                     uppercase
                     text-base
@@ -338,6 +353,10 @@
             <div class="flex items-center justify-end flex-grow">
               <button>
                 <i
+                  data-toggle-role="controller"
+                  data-is-active="false"
+                  data-lesson-caret="2"
+                  data-lesson-target="2"
                   class="
                     fas
                     fa-chevron-down
@@ -352,7 +371,12 @@
           </div>
           <!-- End  Lesson Detail Block -->
           <!-- Begin Lesson Step List -->
-          <ul class="hidden mt-2">
+          <ul
+            data-toggle-role="collapsible"
+            data-lesson-number="2"
+            data-expanded-state="false"
+            class="hidden mt-2"
+          >
             <!-- Begin Lesson Step -->
             <li class="flex pb-3.5">
               <div class="flex justify-center items-center mr-8 ml-2.5">
@@ -540,6 +564,9 @@
             <div class="mr-8">
               <h2>
                 <button
+                  data-toggle-role="controller"
+                  data-is-active="false"
+                  data-lesson-target="3"
                   class="
                     uppercase
                     text-base
@@ -570,6 +597,10 @@
             <div class="flex items-center justify-end flex-grow">
               <button>
                 <i
+                  data-toggle-role="controller"
+                  data-lesson-target="3"
+                  data-is-active="true"
+                  data-lesson-caret="3"
                   class="
                     fas
                     fa-chevron-down
@@ -584,7 +615,12 @@
           </div>
           <!-- End Lesson Detail Block -->
           <!-- Begin Lesson Step List -->
-          <ul class="hidden mt-2">
+          <ul
+            data-toggle-role="collapsible"
+            data-lesson-number="3"
+            data-expanded-state="false"
+            class="hidden mt-2"
+          >
             <!-- Begin Lesson Step -->
             <li class="flex pb-3.5">
               <div class="flex justify-center items-center mr-8 ml-2.5">
