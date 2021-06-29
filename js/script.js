@@ -38,6 +38,16 @@ const collapse = (selector, cmd) => {
   });
 };
 
+// const rotate = (a, b, c) => {
+//   if (a === "false") {
+//     targetCaret.classList.remove("-rotate-90");
+//     targetCaret.setAttribute("data-is-active", "true");
+//   } else if (e === "true") {
+//     elm.classList.add("-rotate-90");
+//     elm.setAttribute("data-is-active", "false");
+//   }
+// };
+
 /* Code block for the Expand/Collapse All button */
 const toggleAll = function () {
   const activateMainToggle = () => {
@@ -47,6 +57,7 @@ const toggleAll = function () {
       });
       carets.forEach((e) => {
         e.classList.add("-rotate-90");
+        e.setAttribute("data-is-active", "false");
       });
       toggleAllController.setAttribute("data-main-toggle-active", "false");
     } else if (toggleAllState === "false") {
@@ -55,6 +66,7 @@ const toggleAll = function () {
       });
       carets.forEach((e) => {
         e.classList.remove("-rotate-90");
+        e.setAttribute("data-is-active", "true");
       });
       toggleAllController.setAttribute("data-main-toggle-active", "true");
     }
@@ -90,14 +102,14 @@ controllers.forEach((trigger) => {
       const findCaret = elm.getAttribute("data-lesson-caret");
       const targetCaret = document.querySelector(findCaret);
       const isActive = targetCaret.getAttribute("data-is-active");
-
+      // rotate(isActive);
       collapse(selector, "toggle");
       if (isActive === "false") {
         targetCaret.classList.remove("-rotate-90");
         targetCaret.setAttribute("data-is-active", "true");
       } else if (isActive === "true") {
-        elm.classList.add("-rotate-90");
-        elm.setAttribute("data-is-active", "false");
+        targetCaret.classList.add("-rotate-90");
+        targetCaret.setAttribute("data-is-active", "false");
       }
     }
   }),
